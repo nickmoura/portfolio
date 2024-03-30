@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nick Moura - Dev front-end</title>
+	<link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/calculadora.css">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="assets/img/logonick.png" alt="Logo" width="50"></a>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#projeto1">Projeto 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projeto2">Projeto 2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projeto3">Projeto 3</a>
+						</li>
+						<!-- Adicione mais itens conforme necessário -->
+					</ul>
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="darkModeSwitch">
+					<label class="form-check-label" for="darkModeSwitch">Modo Escuro</label>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container mt-5">
+		<h1>Calculadora</h1>
+		<!-- Adicione o conteúdo da sua página aqui -->
+	</div>	
+	<main class="container">
+		<section class="calculator">
+			<input type="text" class="form-control" id="display" readonly onkeydown="handleKeyPress(event)">
+			<div class="botoes-calc">
+				<button class="btn btn-secondary botao-calc" onclick="clearDisplay()">C</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('Math.sqrt(')">√</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('%')">%</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('/')">÷</button>
+	
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('7')">7</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('8')">8</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('9')">9</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('*')">*</button>
+	
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('4')">4</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('5')">5</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('6')">6</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('-')">-</button>
+	
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('1')">1</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('2')">2</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('3')">3</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('+')">+</button>
+	
+				<button class="btn btn-secondary botao-calc" id="botaozero" onclick="appendToDisplay('0')">0</button>
+				<button class="btn btn-secondary botao-calc" onclick="appendToDisplay('.')">.</button>
+				<button class="btn btn-primary botao-calc" onclick="calculate()">=</button>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container text-center">
+			<span class="text-muted">© 2024 Nickolas Moura. Criado para o <a href="https://www.github.com/nickmoura"
+					class="linkgit">meu GitHub</a>.</span>
+		</div>
+	</footer>
+	<script>
+		window.alert('Raiz quadrada e porcentagem não estão funcionando corretamente.')
+	</script>
+</body>
+<script src="assets/script/padrao.js"></script>
+<script src="assets/script/calculadora.js"></script>
+
+</html>

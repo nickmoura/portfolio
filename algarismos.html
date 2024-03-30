@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nick Moura - Dev front-end</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/calc/style.css">
+    <link rel="stylesheet" href="assets/css/calc/media.css">
+    <link rel="stylesheet" href="assets/css/geral.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container-logo">
+            <a href="https://www.nickmoura.github.io/portfolio"><img src="assets/img/logonick.png" alt="Logo Nick"
+                class="logonick"></a>
+        </div>
+        <div class="cabe-esquerda">
+            <p class="meunome">Nick Moura</p>
+        </div>
+        <div class="cabe-direita">
+            <p class="nomerepo">Dev front-end</p>
+        </div>
+    </header>
+
+    <main class="areaprincipal">
+        <h1 class="titulopagina">Calculadora de Números</h1>
+        <nav class="mini-menu">
+            <a href="maincalc.html">Página inicial</a>
+            <a href="calculadora.html">Calculadora comum</a>
+            <a href="algarismos.html" class="active">Calculadora de algarismos</a>
+        </nav>
+        <section id="areacalc">
+            <section class="areaform">
+                <form id="numeroForm" class="formulario">
+                    <label for="numeroDigitado" class="legendaform">Digite um número:</label>
+                    <input type="number" id="numeroDigitado" class="campo" placeholder="Digite aqui um número">
+                    <button type="button" class="botoes" onclick="processarNumero()">Inserir Número</button>
+                </form>
+            </section>
+            <section class="resultado">
+                <div id="resultado">
+                    <h2>Resultado</h2>
+                    <p id="quantidadeNumeros">Quantidade de números digitados: 0</p>
+                    <p id="somaValores">Soma dos valores digitados: 0</p>
+                </div>
+            </section>
+            <button class="botoes" onclick="resetar()" id="reset">Resetar</button>
+            <aside class="guia">
+                <h2>Como usar</h2>
+                <ol class="guia-lista">
+                    <li>Digite o número desejado</li>
+                    <li>Clique em "Inserir Número"</li>
+                    <li>O algoritmo calculará a quantidade de números que você digitou e, então, irá somar todos os
+                        valores
+                        que digitou;</li>
+                    <li>Para zerar o algoritmo, clique em "resetar".</li>
+                </ol>
+                <p class="nota" id="notaalg"><span class="nota-span">NOTA:</span> "Número" se refere ao número absoluto e não a cada
+                    algarismo que o compõe.</p>
+            </aside>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Criado por Nickolas Moura para <a href="https://www.github.com/nickmoura" class="linkgit">seu GitHub</a></p>
+    </footer>
+
+</body>
+<script src="assets/script/algarismos.js"></script>
+<script src="assets/script/padrao.js"></script>
+
+</html>

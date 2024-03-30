@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conversor de Unidades</title>
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<link rel="stylesheet" href="assets/css/geral.css">
+	<link rel="stylesheet" href="assets/css/conversor/style.css">
+</head>
+
+<body>
+	<header class="cabecalho">
+		<div class="container-logo">
+			<a href="https://www.nickmoura.github.io/portfolio"><img src="assets/img/logonick.png" alt="Logo Nick"
+					class="logonick"></a>
+		</div>
+		<div class="cabe-esquerda">
+			<p class="meunome">Nick Moura</p>
+		</div>
+		<div class="cabe-direita">
+			<p class="nomerepo">Dev front-end</p>
+		</div>
+	</header>
+	<main>
+		<h1>Conversor de Unidades</h1>
+		<section class="container">
+			<div>
+				<h2>Peso</h2>
+				<input type="number" id="inputWeight" placeholder="Digite o valor">
+				<select id="selectWeightFrom">
+					<option value="kg">Quilograma (kg)</option>
+					<option value="ton">Tonelada (ton)</option>
+					<option value="lb">Libra (lb)</option>
+				</select>
+				<select id="selectWeightTo">
+					<option value="kg">Quilograma (kg)</option>
+					<option value="ton">Tonelada (ton)</option>
+					<option value="lb">Libra (lb)</option>
+				</select><br/>
+				<button onclick="convertWeight()">Converter</button>
+				<p id="resultWeight"></p>
+			</div>
+			<div>
+				<h2>Volume</h2>
+				<input type="number" id="inputVolume" placeholder="Digite o valor">
+				<select id="selectVolumeFrom">
+					<option value="m3">Metro Cúbico (m³)</option>
+					<option value="ft3">Pé Cúbico (ft³)</option>
+				</select>
+				<select id="selectVolumeTo">
+					<option value="m3">Metro Cúbico (m³)</option>
+					<option value="ft3">Pé Cúbico (ft³)</option>
+				</select><br/>
+				<button onclick="convertVolume()">Converter</button>
+				<p id="resultVolume"></p>
+			</div>
+			<div class="last-div">
+				<h2>Comprimento</h2>
+				<input type="number" id="inputLength" placeholder="Digite o valor">
+				<select id="selectLengthFrom">
+					<option value="m">Metro (m)</option>
+					<option value="km">Quilômetro (km)</option>
+					<option value="mi">Milha (mi)</option>
+					<option value="ft">Pé (ft)</option>
+					<option value="in">Polegada (in)</option>
+					<option value="yd">Jarda (yd)</option>
+				</select>
+				<select id="selectLengthTo">
+					<option value="m">Metro (m)</option>
+					<option value="km">Quilômetro (km)</option>
+					<option value="mi">Milha (mi)</option>
+					<option value="ft">Pé (ft)</option>
+					<option value="in">Polegada (in)</option>
+					<option value="yd">Jarda (yd)</option>
+				</select><br/>
+				<button onclick="convertLength()">Converter</button>
+				<p id="resultLength"></p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Criado por Nickolas Moura para <a href="https://www.github.com/nickmoura" class="linkgit">seu GitHub</a></p>
+	</footer>
+	<script src="assets/script/conversor.js"></script>
+</body>
+
+</html> 	
