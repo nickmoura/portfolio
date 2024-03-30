@@ -46,7 +46,7 @@ main {
 }
 
 #btnAdicionar {
-	width: 50%;
+	width: 70%;
 	height: 45px;
 	background: #5ca3ee;
 	border: none;
@@ -59,9 +59,19 @@ main {
 	font-weight: 600;
 }
 
+#btnAdicionar:hover {
+    background-color: #396798;
+}
+
 aside {
 	margin: auto;
 	text-align: justify;
 	color: #fafafa;
 	width: 80vw;
+}
+
+aside p a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bolder;
 }

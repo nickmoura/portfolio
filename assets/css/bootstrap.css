@@ -13891,4 +13891,10 @@ fieldset:disabled .btn {
 	}
 }
 
+.linkgit {
+    text-decoration: none;
+    color: #575B5E;
+    font-weight: bolder;
+}
+
 /*# sourceMappingURL=bootstrap.min.css.map */
