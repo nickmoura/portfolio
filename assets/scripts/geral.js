@@ -16,5 +16,5 @@ $("#darkModeSwitch").change(function() {
     } else {
         // Desativa o Modo Escuro
         $("body").removeClass("dark-mode");
-    }
+    }''''''''''
 });

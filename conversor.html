@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Conversor de Unidades</title>
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-	<link rel="stylesheet" href="assets/css/geral.css">
-	<link rel="stylesheet" href="assets/css/conversor/style.css">
+	<link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/conversor.css">
 </head>
 
 <body>
-	<header class="cabecalho">
-		<div class="container-logo">
-			<a href="https://www.nickmoura.github.io/portfolio"><img src="assets/img/logonick.png" alt="Logo Nick"
-					class="logonick"></a>
-		</div>
-		<div class="cabe-esquerda">
-			<p class="meunome">Nick Moura</p>
-		</div>
-		<div class="cabe-direita">
-			<p class="nomerepo">Dev front-end</p>
-		</div>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="assets/img/logonick.png" alt="Logo" width="50"></a>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Página de Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="agenda.html">Agenda de eventos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="conversor.html">Conversor de medidas</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="calculadora.html">Calculadora</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="buscador.html">Buscador de CEP</a>
+						</li>                   <li class="nav-item">
+							<a class="nav-link" href="moedas.html">Conversor de moedas</a>
+						</li>      
+						<!-- Adicione mais itens conforme necessário -->
+					</ul>
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="darkModeSwitch">
+					<label class="form-check-label" for="darkModeSwitch">Modo Escuro</label>
+				</div>
+			</div>
+		</nav>
 	</header>
-	<main>
+	<div class="container mt-5">
 		<h1>Conversor de Unidades</h1>
-		<section class="container">
+	</div>
+	<main class="container">
 			<div>
 				<h2>Peso</h2>
 				<input type="number" id="inputWeight" placeholder="Digite o valor">
@@ -39,7 +65,7 @@
 					<option value="ton">Tonelada (ton)</option>
 					<option value="lb">Libra (lb)</option>
 				</select><br/>
-				<button onclick="convertWeight()">Converter</button>
+				<button class="btn" onclick="convertWeight()">Converter</button>
 				<p id="resultWeight"></p>
 			</div>
 			<div>
@@ -53,7 +79,7 @@
 					<option value="m3">Metro Cúbico (m³)</option>
 					<option value="ft3">Pé Cúbico (ft³)</option>
 				</select><br/>
-				<button onclick="convertVolume()">Converter</button>
+				<button class="btn" onclick="convertVolume()">Converter</button>
 				<p id="resultVolume"></p>
 			</div>
 			<div class="last-div">
@@ -75,15 +101,23 @@
 					<option value="in">Polegada (in)</option>
 					<option value="yd">Jarda (yd)</option>
 				</select><br/>
-				<button onclick="convertLength()">Converter</button>
+				<button class="btn" onclick="convertLength()">Converter</button>
 				<p id="resultLength"></p>
 			</div>
-		</section>
 	</main>
-	<footer>
-		<p>Criado por Nickolas Moura para <a href="https://www.github.com/nickmoura" class="linkgit">seu GitHub</a></p>
+	<aside>
+		<h2>Sobre</h2>
+		<p>Este conversor foi feito usando HTML, CSS, JavaScript e Bootstrap.</p>
+	</aside>
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container text-center">
+			<span class="text-muted">© 2024 Nickolas Moura. Criado para o <a href="https://www.github.com/nickmoura"
+					class="linkgit">meu GitHub</a>.</span>
+		</div>
 	</footer>
 	<script src="assets/script/conversor.js"></script>
+	<script src="assets/scripts/geral.js"></script>
+
 </body>
 
 </html> 	

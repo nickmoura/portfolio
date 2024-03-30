@@ -24,11 +24,17 @@ body {
 	background-repeat: no-repeat;
 }
 
-main {
+.mt-5 > h1 {
+	color: #fafafa;
+}
 
+main.container {
+	margin-top: 30px;
+	
 }
 
 .calculator {
+	width: 40vw;
 	border-radius: 12.5px;
 	padding: 10px;
 	background: transparent;
@@ -79,4 +85,12 @@ main {
 
 #botaozero {
 	grid-column: span 2;
+}
+
+
+aside {
+	margin: auto;
+	text-align: justify;
+	color: #fafafa;
+	width: 80vw;
 }
