@@ -8,13 +8,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Alterna entre Modo Claro e Modo Escuro
-$("#darkModeSwitch").change(function() {
-    if(this.checked) {
-        // Ativa o Modo Escuro
-        $("body").addClass("dark-mode");
-    } else {
-        // Desativa o Modo Escuro
-        $("body").removeClass("dark-mode");
-    }
-});

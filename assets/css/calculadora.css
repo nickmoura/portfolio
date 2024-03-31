@@ -26,11 +26,11 @@ body {
 
 .mt-5 > h1 {
 	color: #fafafa;
+	text-align: center;
 }
 
 main.container {
 	margin-top: 30px;
-	
 }
 
 .calculator {
@@ -42,6 +42,7 @@ main.container {
 	backdrop-filter: blur(20px);
 	box-shadow: 0 0 10px rgba(0, 0, 0, .2);	text-align: center;
 	margin: auto;
+	margin-bottom: 30px;
 }
 
 #display {
@@ -93,4 +94,22 @@ aside {
 	text-align: justify;
 	color: #fafafa;
 	width: 80vw;
+}
+
+aside p a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 950px) and (max-width: 1300px){
+	.calculator {
+		width: 30vw;
+	}
+}
+
+@media screen and (min-width: 1301px) {
+	.calculator {
+		width: 20vw;
+	}
 }

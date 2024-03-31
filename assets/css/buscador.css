@@ -19,6 +19,12 @@ main {
 	align-items: center;
 }
 
+aside p a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
 .search-frame {
 	width: 275px;
 	display: flex;

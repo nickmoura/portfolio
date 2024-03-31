@@ -3,3 +3,41 @@
 p {
 	text-align: justify;
 }
+
+.col-md-6 {
+    width: 100%;
+}
+
+/* Adicione isso ao seu arquivo CSS personalizado ou ao seu arquivo de estilos */
+.circle-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Torna a imagem circular */
+}
+
+.circle-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.circle-img:hover {
+    transform: scale(1.1); /* Aplica um zoom de 10% na imagem ao passar o mouse por cima */
+}
+
+.stack {
+    align-items: center;
+}
+
+.icon-block {
+    opacity: 0.5; /* Define a opacidade inicial */
+    transition: opacity 0.3s, transform 0.3s ease; /* Adiciona transição de opacidade e transformação */
+}
+
+.icon-block:hover {
+    opacity: 1; /* Aumenta a opacidade quando o mouse passa por cima */
+    transform: scale(1.1); /* Aplica o efeito de zoom */
+}

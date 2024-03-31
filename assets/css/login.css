@@ -161,3 +161,9 @@ aside {
 	color: #fafafa;
 	width: 80vw;
 }
+
+aside p a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bolder;
+}
