@@ -82,14 +82,15 @@ select option {
     padding: 0.5rem 1rem;
 	outline: none;
 	border-radius: 40px;
-    background-color: #4c9aed;
+    background-color: #007F4D;
     color: white;
     border: none;
     cursor: pointer;
+	margin-bottom: 15px;
 }
 
 .btn:hover {
-    background-color: #3986de;
+    background-color: #01472b;
 }
 
 aside {

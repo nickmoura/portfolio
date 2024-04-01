@@ -11,10 +11,10 @@ function exibirEventos() {
         divEvento.classList.add('evento');
         divEvento.innerHTML = `
             <strong style="color:#fafafa;">${evento.data}</strong> - ${evento.titulo}
-            <button style="padding:3px;border-radius:5px;background-color:#5ca3ee;color:#fafafa;border: none;
+            <button style="padding:3px;border-radius:5px;background-color:#007F4D;color:#fafafa;border: none;
             outline: none;	box-shadow: 0 0 10px rgba(0, 0, 0, .1);	cursor: pointer;
             " onclick="editarEvento(${index})">Editar</button>
-            <button style="padding:3px;border-radius:5px;background-color:#5ca3ee;color:#fafafa;border: none;
+            <button style="padding:3px;border-radius:5px;background-color:#007F4D;color:#fafafa;border: none;
             outline: none;	box-shadow: 0 0 10px rgba(0, 0, 0, .1);	cursor: pointer;
             "  onclick="excluirEvento(${index})">Excluir</button>
         `;

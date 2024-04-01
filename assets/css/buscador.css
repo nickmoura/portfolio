@@ -26,10 +26,10 @@ aside p a {
 }
 
 .search-frame {
-	width: 275px;
+	width: 30vw;
 	display: flex;
 	flex-direction: column;
-	align-items: justify;
+	align-items: center;
 	background: transparent;
 	border: 2px solid rgba(255, 255, 255, .2);
 	backdrop-filter: blur(20px);
@@ -46,12 +46,13 @@ aside p a {
 
 #CEP {
 	margin: 30px 0;
+	width: 80%;
 	background: transparent;
 	border: 2px solid rgba(92, 163, 238, 0.5);
 	outline: none;
 	border-radius: 40px;
-	font-size: 16px;
-	color: #183f69;
+	font-size: 0.835rem;
+	color: #5ca3ee;
 	padding: 20px 45px 20px 20px;
 }
 
@@ -60,9 +61,9 @@ aside p a {
 }
 
 .btn-search {
-	width: 100%;
+	width: 40%;
 	height: 45px;
-	background: rgba(92, 163, 238, 0.5);
+	background: #224e7d;
 	border: none;
 	outline: none;
 	border-radius: 40px;
@@ -71,6 +72,10 @@ aside p a {
 	font-size: 16px;
 	color: #fafafa;
 	font-weight: 600;
+}
+
+.btn-search:hover {
+	background-color: #396696;
 }
 
 .search-frame > p {

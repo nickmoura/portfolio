@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Poppins";
+	color: #321414;
+}
+
+body {
+	background: url('.././img/moedas/moedas.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.btn {
+	width: 100%;
+	height: 45px;
+	background: #000080;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #fafafa;
+	font-weight: 600;
+}
+
+.btn:hover {
+	background: #00004b;
+}
+
+.form-control {	
+	background: transparent;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 40px;
+	color: #fafafa;
+	font-size: 0.85rem;
+}
+
+.form-control::-webkit-inner-spin-button, 
+.form-control::-webkit-outer-spin-button { 
+    -webkit-appearance: none; /* Safari e Chrome */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.form-control::placeholder {
+	color: #321414;
+}
+
+select {
+	font-size: 0.85rem;
+}
+
+option {
+	background: transparent;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 40px;
+	font-size: 0.85rem;
+}
+
+main {
+	margin-top: 20px;
+}
+
+.mb-4 {
+	text-align: center;
+}
+
+.conv-area {
+	width: 50vw;
+	background: transparent;
+	border: 1px solid #ffffff33;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	border-radius: 1rem;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+
+aside {
+	margin: auto;
+	text-align: justify;
+	color: #321414;
+	width: 80vw;
+}
+
+aside p a {
+    color: #321414;
+    text-decoration: none;
+    font-weight: bolder;
+}

@@ -9,7 +9,7 @@ body {
 
 .mt-5 > h1 {
     text-align: center;
-    color: #fafafa;
+    color: #CCCCCC;
 }
 
 main {
@@ -39,8 +39,7 @@ main {
 .evento {
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #fafafa;
-    border-radius: 10px;
+    border: none;
     width: 100%;
     color: #fafafa;
 }
@@ -48,7 +47,7 @@ main {
 #btnAdicionar {
 	width: 70%;
 	height: 45px;
-	background: #5ca3ee;
+	background: #007F4D;
 	border: none;
 	outline: none;
 	border-radius: 40px;
@@ -60,18 +59,18 @@ main {
 }
 
 #btnAdicionar:hover {
-    background-color: #396798;
+    background-color: #01472b;
 }
 
 aside {
 	margin: auto;
 	text-align: justify;
-	color: #fafafa;
+	color: #CCCCCC;
 	width: 80vw;
 }
 
 aside p a {
-    color: #fafafa;
+    color: #CCCCCC;
     text-decoration: none;
     font-weight: bolder;
 }

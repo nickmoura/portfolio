@@ -8,12 +8,49 @@
     <!-- Adicione o link para o Bootstrap CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Adicione o link para o CSS personalizado -->
-    <link rel="stylesheet" href="assets/css/moedas/style.css">
+    <link rel="stylesheet" href="assets/css/moedas.css">
 </head>
 <body>
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="assets/img/logonick.png" alt="Logo" width="50"></a>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Página de Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="agenda.html">Agenda de eventos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="conversor.html">Conversor de medidas</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="calculadora.html">Calculadora</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="buscador.html">Buscador de CEP</a>
+						</li>                   <li class="nav-item">
+							<a class="nav-link" href="moedas.html">Conversor de moedas</a>
+						</li>      
+						<!-- Adicione mais itens conforme necessário -->
+					</ul>
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="darkModeSwitch">
+					<label class="form-check-label" for="darkModeSwitch">Modo Escuro</label>
+				</div>
+			</div>
+		</nav>
+	</header>
     <main>
         <h1 class="mb-4">Conversor de Moedas</h1>
-        <div class="container mt-5">
+        <div class="container mt-5 conv-area">
             <div class="row">
                 <div class="col-md-6">
                     <label for="amount">Valor em USD:</label>
@@ -31,24 +68,48 @@
             </div>
             <div class="row mt-3">
                 <div class="col">
-                    <button id="convertBtn" class="btn btn-primary">Converter</button>
+                    <h3>Valor Convertido:</h3> 
+                    <p id="result"></p>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col">
-                    <h3>Valor Convertido:</h3>
-                    <p id="result"></p>
+                    <button id="convertBtn" class="btn btn-primary">Converter</button>
                 </div>
             </div>
         </div>
     </main>
-    
+    <aside>
+		<h2>Como usar</h2>
+		<ul>
+			<li>Digite um valor <em>em dólar americano</em></li>
+			<li>Insira a data do seu evento</li>
+			<li>Insira o nome do seu evento</li>
+			<li>Você pode editar ou excluir seu evento</li>
+		</ul>
+		<h2>Dados</h2>
+		<p>Esta agenda não faz uso de banco de dados. Logo, seus dados não serão armazenados e a agenda será limpa após recarregar a página.</p>
+		<p>Esta página não acessa seu cache do navegador, garantindo total privacidade e segurança das suas informações pessoais.</p>
+		<h2>Sobre</h2>
+		<h6><em>Texto meramente figurativo</em></h6>
+		<p>Bem-vindo à minha Agenda Online! Esta ferramenta foi desenvolvida com o objetivo de ajudar você a organizar seus compromissos e eventos diários de forma simples e eficiente.</p>
+		<p>Com a nossa agenda, você pode facilmente adicionar, editar e excluir eventos conforme necessário. Ela é perfeita para uso pessoal, profissional ou acadêmico, permitindo que você mantenha sua rotina organizada e produtiva.</p>
+		<p>Esta agenda foi criada utilizando HTML, CSS, Bootstrap e JavaScript, garantindo uma experiência de usuário fluida e responsiva em diferentes dispositivos.</p>
+		<p>O código-fonte desta agenda está disponível no <a href="https://github.com/nickmoura/portfolio/blob/main/agenda.html">GitHub</a>, onde você pode colaborar, enviar sugestões e contribuir para o desenvolvimento contínuo desta ferramenta.</p>
+		<p>Sua opinião é importante para nós! Estamos sempre abertos a sugestões para melhorias e novos recursos. Sinta-se à vontade para entrar em contato e compartilhar suas ideias.</p>
+	</aside>
+    <footer class="footer mt-auto py-3 bg-light">
+		<div class="container text-center">
+			<span class="text-muted">© 2024 Nickolas Moura. Criado para o <a href="https://www.github.com/nickmoura"
+					class="linkgit">meu GitHub</a>.</span>
+		</div>
+	</footer>
     <!-- Adicione o link para o Bootstrap JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-95MjPyGjNJgZOIbDW41IeDMJSa2HYwwnUw0n58Ydw1w0xGv+d2KbIosweSU5ZrGl" crossorigin="anonymous"></script>
     <!-- Adicione o link para o jQuery (necessário para o Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Adicione o link para o JavaScript personalizado -->
-    <script src="assets/script/moedas.js"></script>
-    <script src="assets/scripts/geral.js"></script>
+    <script src="assets/scripts/moedas.js"></script>
+    <script src="assets/scripts/menu.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon"  href="assets/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 	<title>Nickolas Moura - Desenvolvedor front-end</title>
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -14,10 +14,9 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand mx-auto" href="index.html"><img src="assets/img/logonick.png" alt="Logo"
-						width="80"></a>
+				<a class="navbar-brand mx-auto" href="index.html"><img src="assets/img/logonick.png" alt="Logo" width="50"></a>
 
 				<div class="d-flex">
 					<ul class="navbar-nav">
@@ -50,25 +49,21 @@
 		</nav>
 	</header>
 	<div class="container mt-5">
-		<div class="row align-items-center justify-content-between">
 			<!-- Adiciona a classe justify-content-between para alinhar os itens -->
 			<div class="col-md-6">
-				<h1>Nickolas Mensatto Moura</h1>
-				<h2>Desenvolvedor Front-End Jr</h2>
-			</div>
-			<div class="col-md-6 text-md-end">
-				<!-- Adiciona a classe text-md-end para alinhar o texto à direita em dispositivos de tamanho médio -->
-				<!-- Adicione a imagem circular aqui -->
+				<div class="title-container">
+					<h1>Olá, eu sou o <span>Nickolas Moura</span></h1>
+					<h2>Desenvolvedor Front-End Jr</h2>
+				</div>
 				<div class="circle-img-container">
 					<img src="assets/img/perfil.jpg" alt="Minha Foto" class="circle-img">
 				</div>
 			</div>
-		</div>
 	</div>
 	<main class="container mt-5">
 		<article class="row">
-			<div class="col-md-12">
-				<h2>Sobre Mim</h2>
+			<section class="col-md-12">
+				<h2 class="text-center my-5">Sobre Mim</h2>
 				<p>Olá, meu nome é Nickolas Moura e tenho 29 anos. Atualmente, moro em Sorocaba. Sou formado em Relações
 					Internacionais, mas recentemente decidi fazer uma transição de carreira para a área de tecnologia.
 					No momento, estou cursando o primeiro semestre de Análise e Desenvolvimento de Sistemas na faculdade
@@ -81,12 +76,12 @@
 					proficiência avançada em espanhol.</p>
 				<p>Procuro por oportunidades freelance para que eu possa contribuir com as metas do seu projeto e ganhar
 					cada vez mais aprendizado.</p>
-			</div>
+			</section>
 		</article>
 
 		<section class="row mt-5">
 			<div class="col-md-12">
-				<h2>Tech Stack</h2>
+				<h2 class="text-center my-5">Tech Stack</h2>
 				<div class="row stack col-md-12">
 					<div class="col-sm-6 col-md-4">
 						<div class="icon-block">
@@ -116,38 +111,105 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="container">
+			<h2 class="text-center my-5">Meus Projetos</h2>		
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			  </div>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <a href="login.html"><img src="assets/img/fotos-carrossel/login.png" class="d-block w-100" alt="Página de login"></a>
+				  <div class="carousel-caption">
+					<h5>Login</h5>
+					<p>Página de login 100% responsiva</p>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <a href="calculadora.html"><img src="assets/img/fotos-carrossel/calculadora.png" class="d-block w-100" alt="Calculadora"></a>
+				  <div class="carousel-caption">
+					<h5>Calculadora</h5>
+					<p>Calculadora funcional em JavaScript</p>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <a href="agenda.html"><img src="assets/img/fotos-carrossel/agenda.png" class="d-block w-100" alt="Agenda"></a>
+				  <div class="carousel-caption">
+					<h5>Agenda</h5>
+					<p>Agenda de eventos com adição, edição e exclusão de itens</p>
+				  </div>
+				</div>
+				<div class="carousel-item">
+					<a href="conversor.html"><img src="assets/img/fotos-carrossel/conversor-uni.png" class="d-block w-100" alt="conversor"></a>
+					<div class="carousel-caption">
+					  <h5>Conversor de unidades</h5>
+					  <p>Conversor de unidades de medida</p>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<a href="moedas.html"><img src="assets/img/fotos-carrossel/moedas.png" class="d-block w-100" alt="Moedas"></a>
+					<div class="carousel-caption">
+					  <h5>Conversor de moedas</h5>
+					  <p>Conversor de moedas usando API</p>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<a href="buscador.html"><img src="assets/img/fotos-carrossel/buscador.png" class="d-block w-100" alt="Moedas"></a>
+					<div class="carousel-caption">
+					  <h5>Buscador de CEP</h5>
+					  <p>Buscador de CEP usando API</p>
+					</div>
+				  </div>			  
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Próximo</span>
+			  </button>
+			</div>
 		
-		<section class="list-group mt-3">
-		<h2 class="mt-5">Projetos</h2>
-			<a href="login.html" class="list-group-item list-group-item-action">Tela de login</a>
-			<a href="agenda.html" class="list-group-item list-group-item-action">Agenda de eventos</a>
-			<a href="calculadora.html" class="list-group-item list-group-item-action">Calculadora</a>
-			<a href="conversor.html" class="list-group-item list-group-item-action">Conversor de medidas</a>
-			<a href="moedas.html" class="list-group-item list-group-item-action">Conversor de moedas</a>
-			<a href="buscador.html" class="list-group-item list-group-item-action">Buscador de CEP</a>
-		</section>
-		<section class="row mt-5">
+		  </section>
+		<section class="row mt-5 contact">
 			<div class="col-md-12">
-				<h2>Entre em contato!</h2>
+				<h2 class="text-center my-5">Entre em contato!</h2>
 				<div class="row stack col-md-12">
 					<div class="col-sm-6 col-md-4">
 						<div class="icon-block">
-							<a href="https://wa.me/5515998000286"><img src="assets/img/WhatsApp.svg.png" width="50px" alt="WhatsApp"></a>
+							<a href="https://wa.me/5515998000286"><img src="assets/img/WhatsApp.svg.png" width="50px"
+									alt="WhatsApp"></a>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-4">
 						<div class="icon-block">
-							<a href="https://www.linkedin.com/in/nickmoura"><img src="assets/img/linkedin_logo_icon_187302.png" width="50px" alt="LinkedIn"></a>
+							<a href="https://www.linkedin.com/in/nickmoura"><img
+									src="assets/img/linkedin_logo_icon_187302.png" width="50px" alt="LinkedIn"></a>
 						</div>
 					</div>
 					<div class="col-sm-3 col-md-4">
 						<div class="icon-block">
-							<a href="mailto:nickmoura26@gmail.com"><img src="assets/img/112-gmail_email_mail-512.png" width="50px" alt="E-mail"></a>
+							<a href="mailto:nickmoura26@gmail.com"><img src="assets/img/112-gmail_email_mail-512.png"
+									width="50px" alt="E-mail"></a>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-4">
+						<div class="icon-block">
+							<a href="https://www.github.com/nickmoura"><img src="assets/img/25231.png"
+									width="50px" alt="E-mail"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 	</main>
 	<footer class="footer mt-auto py-3 bg-light">
 		<div class="container text-center">
@@ -156,9 +218,8 @@
 		</div>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/scripts/darkmode.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 </body>
 
 </html>
