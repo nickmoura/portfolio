@@ -8,6 +8,10 @@ p {
     width: 100%;
 }
 
+.col-md-6 > h2 {
+    color: #666f78;
+}
+
 /* Adicione isso ao seu arquivo CSS personalizado ou ao seu arquivo de estilos */
 .circle-img-container {
     position: relative;
@@ -41,4 +45,28 @@ p {
 .icon-block:hover {
     opacity: 1; /* Aumenta a opacidade quando o mouse passa por cima */
     transform: scale(1.1); /* Aplica o efeito de zoom */
+}
+
+.banner {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+}
+
+.contact-icons i {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons i:hover {
+    transform: scale(1.2);
 }
