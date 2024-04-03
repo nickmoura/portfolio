@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url();
 
 body {
     background: #13131F;
@@ -14,14 +15,14 @@ h1, h2 {
     border-bottom: 1px solid #4169E1;
 }
 
-h1 > span {
+.name {
     color: #4169E1;
 }
 
 p {
-    text-align: justify;
+    text-align: center;
     color: #828282;
-    font-family: 'Roboto';
+    font-family: 'Poppins', sans-serif;
     text-indent: 2rem;
 }
 
@@ -30,10 +31,18 @@ p {
     display: flex;
     align-items: row;
     justify-content: space-around;
+    padding: 10rem 2.5rem;
 }
 
-.title-container>h2 {
+.title-container {
+    font-size: 2.625rem;
+
+}
+
+.title-container > h2 {
     color: #666f78;
+    font-size: 1.25rem;
+
 }
 
 /* Adicione isso ao seu arquivo CSS personalizado ou ao seu arquivo de estilos */
@@ -125,4 +134,8 @@ p {
     background-color: rgba(0, 0, 0, 0.25);
     padding: 10px;
     border-radius: 10px;
+}
+
+.bg-light  {
+    background-color: #4169E1;
 }
