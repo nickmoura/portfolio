@@ -6,7 +6,8 @@ body {
     background: #13131F;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #F9F9F9;
     font-family: "Poppins";
 }
@@ -39,7 +40,7 @@ p {
 
 }
 
-.title-container > h2 {
+.title-container>h2 {
     color: #666f78;
     font-size: 1.25rem;
 
@@ -71,22 +72,30 @@ p {
 }
 
 .stack {
+    display: flex;
     align-items: center;
-    gap: 24px;
+    justify-content: center;
 }
 
-.icon-block {
+.icon {
+    width: 150px;
+    margin: 0 1rem 0 1rem;
     opacity: 0.5;
-    /* Define a opacidade inicial */
     transition: opacity 0.3s, transform 0.3s ease;
-    /* Adiciona transição de opacidade e transformação */
+
 }
 
-.icon-block:hover {
+.icon:hover {
     opacity: 1;
     /* Aumenta a opacidade quando o mouse passa por cima */
     transform: scale(1.1);
     /* Aplica o efeito de zoom */
+}
+
+.icon-contact {
+    margin: 0 1rem 0 1rem;
+    opacity: 0.5;
+    transition: opacity 0.3s, transform 0.3s ease;
 }
 
 .banner {
@@ -99,18 +108,9 @@ p {
     margin-bottom: 30px;
 }
 
-.contact-icons {
-    margin-top: 20px;
-}
 
 .contact-icons a {
     margin: 0 10px;
-}
-
-.contact-icons i {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
 }
 
 .contact-icons i:hover {
@@ -125,6 +125,12 @@ p {
     text-align: center;
 }
 
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin: 20px 30px 30px 30px;
+}
+
 .carousel-caption {
     position: absolute;
     bottom: 50px;
@@ -136,6 +142,14 @@ p {
     border-radius: 10px;
 }
 
-.bg-light  {
+.bg-light {
     background-color: #4169E1;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px){
+	.stack {
+		flex-direction: column;
+        align-items: center;
+        gap: 24px;
+	}
 }
