@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+	background-color: #3131b4;
+	font-family: "Poppins", sans-serif;
+}
+
+.my-name {
+	font-weight: bolder;
+}
+
+.portfolio-title {
+	color: #3131b4;
+}
+
+#about {
+	color: #828282;
+}
+
+.box-shadow-full {
+	border-radius: 20px;
+}
+
+header {
+	background-color: #3131b4;
+}
+
+#work {
+	background-image: url(/assets/img/wallhaven-76xx9e.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.line-mf {
+	background-color: #3131b4;
+}
+
+.title-left::before {
+	background-color: #3131b4;
+
+}
+
+.skill-mf>.progress>.progress-bar {
+	background-color: #3131b4;
+}
+
+.skill-mf>.progress {
+	background-color: #84bfbf;
+}
+
+.socials {
+	text-align: center;
+}
+
+.overlay-mf {
+	background-color: #3131b4;
+}
+
+footer {
+	background-color: #3131b4;
+}

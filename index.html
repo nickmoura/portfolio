@@ -1,172 +1,508 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="light">
+<html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-	<title>Nickolas Moura - Desenvolvedor front-end</title>
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="assets/css/index.css">
-	<!-- <link rel="stylesheet" href="assets/css/light-dark.css"> -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Nick Moura - Desenvolvedor Front-End</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+
+  <link href="assets/css/bootstrap-template.css" rel="stylesheet">
+  <link href="assets/css/index-new.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<div class="container-fluid">
-				<a class="navbar-brand mx-auto" href="index.html"><img src="assets/img/logonick.png" alt="Logo"
-						width="50"></a>
 
-				<div class="d-flex">
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<a href="#" class="nav-link dropdown-toggle current-theme" id="themeDropdown"
-								aria-expanded="false">
-								<i class='bx bxs-sun' style="color: #fafafa;"></i>
-							</a>
-							<ul class="dropdown-menu themes-list" aria-labelledby="themeDropdown">
-								<li>
-									<a href="#" class="dropdown-item" data-theme="light">
-										<i class='bx bxs-sun' style="color: #fafafa;"></i> Claro
-									</a>
-								</li>
-								<li>
-									<a href="#" class="dropdown-item" data-theme="dark">
-										<i class='bx bxs-moon'></i> Escuro
-									</a>
-								</li>
-								<li>
-									<a href="#" class="dropdown-item" data-theme="auto">
-										<i class='bx bxs-circle-half'></i> Auto
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<div class="container mt-5">
-		<!-- Adiciona a classe justify-content-between para alinhar os itens -->
-		<div class="col-md-6">
-			<div class="title-container">
-				<h1>Olá, eu sou o </h1>
-				<span class="name">Nickolas Moura 🤗</span>
-				<h2>Desenvolvedor Front-End Jr</h2>
-			</div>
-			<div class="circle-img-container">
-				<img src="assets/img/eu.jpeg" alt="Minha Foto" class="circle-img">
-			</div>
-		</div>
-	</div>
-	<main class="container mt-5">
-		<article class="row">
-			<section class="col-md-12">
-				<h2 class="text-center my-5">Sobre Mim</h2>
-				<p>Desenvolvedor Front-end nível júnior com conhecimento em React.js, JavaScript, Styled Components. Ama
-					aprender na prática. Possui certificação em Metodologias Ágeis (CSM e KMPI) e experiência em
-					trabalhar com esse tipo de projeto. Cursando Análise e Desenvolvimento de Sistemas.</p>
-			</section>
-		</article>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
 
-		<section class="row mt-5">
-			<div class="col-md-12">
-				<h2 class="text-center my-5">Tech Stack</h2>
-				<div class="row stack col-md-12">
-					<img src="assets/img/html-150.png" width="75px" alt="HTML" class="icon">
-					<img src="assets/img/css-150.png" width="75px" alt="CSS" class="icon">
-					<img src="assets/img/JavaScript-logo-150.png" width="75px" alt="JavaScript" class="icon">
-					<img src="assets/img/react-150.png" width="75px" alt="React" class="icon">
-					<img src="assets/img/figma-150.png" width="75px" alt="Figma" class="icon">
-				</div>
-		</section>
+      <h1 class="logo"><a href="index.html">Nick Moura</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a class="navbar-brand mx-auto" href="index.html"><img src="assets/img/logonick.png" alt="Logo"
+        width="50"></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Início</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
+          <li class="dropdown"><a href="#"><span>Projetos</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="calculadora.html">Calculadora</a></li>
+              <li><a href="agenda.html">Agenda de eventos</a></li>
+              <li><a href="buscador.html">Buscador de CEP</a></li>
+              <li><a href="moedas.html">Conversor de moedas</a></li>
+              <li><a href="conversor.html">Conversor de medidas</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-		<section class="container">
-			<h2 class="text-center my-5">Meus Projetos</h2>
-			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-						class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-						aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-						aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-						aria-label="Slide 4"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-						aria-label="Slide 5"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-						aria-label="Slide 6"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<a href="login.html"><img src="assets/img/fotos-carrossel/login.png" class="d-block w-100"
-								alt="Página de login"></a>
-					</div>
-					<div class="carousel-item">
-						<a href="calculadora.html"><img src="assets/img/fotos-carrossel/calculadora.png"
-								class="d-block w-100" alt="Calculadora"></a>
-					</div>
-					<div class="carousel-item">
-						<a href="agenda.html"><img src="assets/img/fotos-carrossel/agenda.png" class="d-block w-100"
-								alt="Agenda"></a>
-					</div>
-					<div class="carousel-item">
-						<a href="conversor.html"><img src="assets/img/fotos-carrossel/conversor-uni.png"
-								class="d-block w-100" alt="conversor"></a>
-					</div>
-					<div class="carousel-item">
-						<a href="moedas.html"><img src="assets/img/fotos-carrossel/moedas.png" class="d-block w-100"
-								alt="Moedas"></a>
-					</div>
-					<div class="carousel-item">
-						<a href="buscador.html"><img src="assets/img/fotos-carrossel/buscador.png" class="d-block w-100"
-								alt="Moedas"></a>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Anterior</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Próximo</span>
-				</button>
-			</div>
+    </div>
+  </header><!-- End Header -->
 
-		</section>
-		<section class="container">
-			<h2 class="text-center my-5">Entre em contato!</h2>
-			<div class="row stack col-md-12">
-				<div class="contact-icon">
-					<a href="https://wa.me/5515998000286" target="_blank" ><img src="assets/img/WhatsApp.svg.png" width="50px"
-							alt="WhatsApp" class="icon-contact"></a>
-				</div>
-				<div class="contact-icon">
-					<a href="https://www.linkedin.com/in/nickmoura" target="_blank" ><img src="assets/img/linkedin_logo_icon_187302.png"
-							width="50px" alt="LinkedIn" class="icon-contact"></a>
-				</div>
-				<div class="contact-icon">
-					<a href="mailto:nickmoura26@gmail.com" target="_blank" ><img src="assets/img/112-gmail_email_mail-512.png" width="50px"
-							alt="E-mail" class="icon-contact"></a>
-				</div>
-				<div class="contact-icon">
-					<a href="https://www.github.com/nickmoura" target="_blank" ><img src="assets/img/25231.png" width="50px"
-							alt="GitHub" class="icon-contact"></a>
-				</div>
-			</div>
-		</section>
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">Eu sou o<span class="my-name">Nickolas Moura</span> 🤗</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Desenvolvedor Front-end Jr., Profissional certificado CSM e KMPI, Fã de Rock, Fã de Fórmula 1, Torcedor do São Paulo"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
 
-	</main>
+  <main id="main">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/eu.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Nome: </span> <span>Nickolas Mensatto Moura</span></p>
+                        <p><span class="title-s">Profile: </span> <span>front-end developer</span></p>
+                        <p><span class="title-s">Email: </span> <span><a href="mailto:nickmoura26@gmail.com" class="email-link">nickmoura26@gmail.com</a></span></p>
+                        <p><span class="title-s">Telefone: </span> <span><a href="https://wa.me/5515998000286" class="link-wpp">(15) 99800-0286</a></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Tech Stack</p>
+                    <span>HTML</span> <span class="pull-right">100%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JavaScript</span> <span class="pull-right">60%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>React</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Figma</span> <span class="pull-right">60%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Sobre mim
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Olá, tudo bem?
+                      Sou desenvolvedor Front-end nível júnior com conhecimento em React.js, JavaScript, Styled Components. Amo
+                      aprender na prática.
+                    </p>
+                    <p class="lead">
+                      Possuo certificação em Metodologias Ágeis (CSM e KMPI) e experiência em
+                      trabalhar com esse tipo de projeto. Tenho ainda experiência com equipes multinacionais e multiculturais. Estou cursando Análise e Desenvolvimento de Sistemas.
+                    </p>
+                    <p class="lead">
+                      Meu inglês é fluente e meu espanhol é intermediário. Moro em Sorocaba, SP.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">WORKS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">AWARD WON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="portfolio-title title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Aqui estão meus projetos.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/fotos-projetos/agenda.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/fotos-projetos/agenda.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Agenda de eventos</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvimento Web</span> / <span class="w-date">Março de 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="agenda.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/fotos-projetos/buscador.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/fotos-projetos/buscador.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Buscador de CEP</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvimento Web</span> / <span class="w-date">Março de 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="buscador.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/fotos-projetos/calculadora.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/fotos-projetos/calculadora.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Calculadora</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvimento Web</span> / <span class="w-date">Fevereiro de 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="calculadora.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/fotos-projetos/conversor-uni.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/fotos-projetos/conversor-uni.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Conversor de unidades</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvimento Web</span> / <span class="w-date">Fevereiro de 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="conversor.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/fotos-projetos/login.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/fotos-projetos/login.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Tela de Login</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvimento Web</span> / <span class="w-date">Fevereiro de 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="login.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/fotos-projetos/moedas.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/fotos-projetos/moedas.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Conversor de moedas</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvimento Web</span> / <span class="w-date">Fevereiro de 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="moedas.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Xavi Alonso</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div> End testimonial item
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Marta Socrate</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div> End testimonial item
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div> End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/wallhaven-nrzx8j.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div>
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Entrar em contato
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Converse comigo pelos canais abaixo. Estou ansioso pelo seu contato!
+                      </p>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="mailto:nickmoura26@gmail.com"><span class="ico-circle"><i class="bi bi-envelope-at"></i></span></a></li>
+                        <li><a href="https://wa.me/5515998000286"><span class="ico-circle"><i class="bi bi-whatsapp"></i></span></a></li>
+                        <li><a href="https://linkedin.com/in/nickmoura"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/nickmoura"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Nickolas Moura</strong>. Todos os direitos reservados.</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Desenvolvido por Nickolas Moura para seu <a href="https://github.com/nickmoura">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/scripts/main.js"></script>
+
 </body>
 
 </html>
