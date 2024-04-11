@@ -56,16 +56,17 @@
 	</div>
 	<main class="container">
 		<section class="search-frame">
-			<input type="text" name="CEP" id="CEP" placeholder="Digite aqui um CEP">
-			<button class="btn-search">Pesquisar</button>
+			<input type="text" name="CEP" id="cepInput" placeholder="Digite aqui um CEP">
+			<button class="btn-search" onclick="buscarCEP()">Pesquisar</button>
+			<div id="resultado"></div>
 		</section>
 	</main>
 	<aside>
 		<h2>Como usar</h2>
 		<h5><em>Por enquanto a API não está funcionando</em></h5>
 		<ul>
-			<li>Digite um CEP</li>
-			<li>Clique em pesquisar</li>
+			<li>Digite um <span class="bolder">CEP</span></li>
+			<li>Clique em <span class="bolder">pesquisar</span></li>
 		</ul>
 		<h2>Dados</h2>
 		<p>Esta página não faz uso de banco de dados e apenas consulta uma API pública. Logo, seus dados não serão armazenados e a pesquisa será limpa após recarregar a página.</p>
@@ -83,6 +84,7 @@
 					class="linkgit">meu GitHub</a>.</span>
 		</div>
 	</footer>
+	<script src="assets/scripts/cep.js"></script>
 	<script src="assets/scripts/menu.js"></script>
 </body>
 
