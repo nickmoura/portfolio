@@ -90,3 +90,9 @@ footer {
 	opacity: 1;
     transform: scale(1.1);
 }
+
+.ico-circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
