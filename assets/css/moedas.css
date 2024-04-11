@@ -6,11 +6,11 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Poppins";
-	color: #321414;
+	color: #fafafa;
 }
 
 body {
-	background: url('.././img/moedas/moedas.jpg');
+	background: url('.././img/moedas/wallhaven-kw3v9m.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -87,12 +87,12 @@ main {
 aside {
 	margin: auto;
 	text-align: justify;
-	color: #321414;
+	color: #fafafa;
 	width: 80vw;
 }
 
 aside p a {
-    color: #321414;
+    color: #fafafa;
     text-decoration: none;
     font-weight: bolder;
 }

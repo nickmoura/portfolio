@@ -36,6 +36,10 @@ header {
 	background-color: #3131b4;
 }
 
+.title-left, .title-s {
+	color: #3131b4;
+}
+
 .title-left::before {
 	background-color: #3131b4;
 
@@ -49,6 +53,10 @@ header {
 	background-color: #84bfbf;
 }
 
+.email-link, .link-wpp {
+	color: #828282;
+}
+
 .socials {
 	text-align: center;
 }
@@ -59,4 +67,26 @@ header {
 
 footer {
 	background-color: #3131b4;
+}
+
+.stacks-container {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	flex-wrap: wrap
+}
+
+.stack-name {
+	text-align: center;
+	color: #3131b4;
+}
+
+.stack-info {
+    opacity: 0.5;
+    transition: opacity 0.3s, transform 0.3s ease;
+}
+
+.stack-info:hover {
+	opacity: 1;
+    transform: scale(1.1);
 }
