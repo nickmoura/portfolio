@@ -8,10 +8,15 @@ body {
 
 .my-name {
 	font-weight: bolder;
+	color: #3131b4;
 }
 
 .portfolio-title {
-	color: #3131b4;
+	color: #FFFFCC;
+}
+
+.subtitle-a {
+	color: #FFFFCC;
 }
 
 #about {
@@ -27,7 +32,7 @@ header {
 }
 
 #work {
-	background-image: url(/assets/img/wallhaven-76xx9e.jpg);
+	background-image: url(../assets/img/wallhaven-76xx9e.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -67,6 +72,7 @@ header {
 
 footer {
 	background-color: #3131b4;
+	border-top: 1px solid #FFFFCC;
 }
 
 .stacks-container {
