@@ -1,1 +1,0 @@
-window.alert('Seus dados não estão sendo armazenados. Esta página é apenas front-end.')

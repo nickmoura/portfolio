@@ -1,1 +1,0 @@
-window.alert('Esta página é apenas front-end. A busca não irá retornar.')
