@@ -134,3 +134,8 @@ footer {
 	border-top-left-radius: 5%;
 	border-bottom: 1px solid;
 }
+
+#header>.all-projects {
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+}
