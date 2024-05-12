@@ -1,154 +1,136 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url();
 
 body {
-    background: #13131F;
+	background-color: #3131b4;
+	font-family: "Poppins", sans-serif;
 }
 
-h1,
-h2 {
-    color: #F9F9F9;
-    font-family: "Poppins";
+.my-name {
+	font-weight: bolder;
+	color: #3131b4;
 }
 
-.navbar {
-    border-bottom: 1px solid #4169E1;
+.portfolio-title {
+	color: #FFFFCC;
 }
 
-.name {
-    color: #4169E1;
+.subtitle-a {
+	color: #FFFFCC;
 }
 
-p {
-    text-align: center;
-    color: #828282;
-    font-family: 'Poppins', sans-serif;
-    text-indent: 2rem;
+#about {
+	color: #828282;
 }
 
-.col-md-6 {
-    width: 100%;
-    display: flex;
-    align-items: row;
-    justify-content: space-around;
-    padding: 10rem 2.5rem;
+.box-shadow-full {
+	border-radius: 20px;
 }
 
-.title-container {
-    font-size: 2.625rem;
+header {
+	background-color: #3131b4;
+}
+
+#work {
+	background-image: url(../assets/img/wallhaven-76xx9e.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.line-mf {
+	background-color: #3131b4;
+}
+
+.title-left, .title-s {
+	color: #3131b4;
+}
+
+.title-left::before {
+	background-color: #3131b4;
 
 }
 
-.title-container>h2 {
-    color: #666f78;
-    font-size: 1.25rem;
-
+.skill-mf>.progress>.progress-bar {
+	background-color: #3131b4;
 }
 
-/* Adicione isso ao seu arquivo CSS personalizado ou ao seu arquivo de estilos */
-.circle-img-container {
-    position: relative;
-    overflow: hidden;
-    width: 150px;
-    /* Ajuste o tamanho conforme necessário */
-    height: 150px;
-    /* Ajuste o tamanho conforme necessário */
-    border-radius: 50%;
-    /* Torna a imagem circular */
+.skill-mf>.progress {
+	background-color: #84bfbf;
 }
 
-.circle-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-    /* Adiciona uma transição suave */
+.email-link, .link-wpp {
+	color: #828282;
 }
 
-.circle-img:hover {
-    transform: scale(1.1);
-    /* Aplica um zoom de 10% na imagem ao passar o mouse por cima */
+.socials {
+	text-align: center;
 }
 
-.stack {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.overlay-mf {
+	background-color: #3131b4;
 }
 
-.icon {
-    width: 150px;
-    margin: 0 1rem 0 1rem;
+footer {
+	background-color: #3131b4;
+	border-top: 1px solid #FFFFCC;
+}
+
+.stacks-container {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	flex-wrap: wrap
+}
+
+.stack-name {
+	text-align: center;
+	color: #3131b4;
+}
+
+.stack-info {
     opacity: 0.5;
     transition: opacity 0.3s, transform 0.3s ease;
 }
 
-.icon:hover {
-    opacity: 1;
-    /* Aumenta a opacidade quando o mouse passa por cima */
+.stack-info:hover {
+	opacity: 1;
     transform: scale(1.1);
-    /* Aplica o efeito de zoom */
 }
 
-.icon-contact {
-    margin: 0 1rem 0 1rem;
-    opacity: 0.5;
-    transition: opacity 0.3s, transform 0.3s ease;
+.lang {
+	border-top: 1px solid #828282;
+	border-bottom: 1px solid #828282;
+	margin: 0;
+	padding: 1rem 0;
+	color: #0078ff;
 }
 
-.banner {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
+.ico-circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.contact {
-    margin-bottom: 30px;
+.w-more > p.w-ctegory {
+    text-align: justify;
 }
 
-
-.contact-icons a {
-    margin: 0 10px;
+.w-date {
+	margin: 0;
+	color: #0078ff;
 }
 
-.contact-icons i:hover {
-    transform: scale(1.2);
-}
-
-.d-block {
-    border-radius: 25px;
-}
-
-.carousel-item {
-    text-align: center;
-}
-
-.contact-icon {
-    width: 50px;
-    height: 50px;
-    margin: 20px 30px 30px 30px;
-}
-
-.carousel-caption {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.bg-light {
-    background-color: #4169E1;
-}
-
-@media screen and (min-width: 300px) and (max-width: 700px){
-	.stack {
-		flex-direction: column;
-        align-items: center;
-        gap: 24px;
-	}
+.proj-type-text {
+	font-size: 1.1rem;
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #0078ff;
+	margin: 0;
+	padding: 1rem 0;
+	/* border-top: 1px solid #FFFFCC ;
+	border-left: 1px solid #FFFFCC;
+	border-right: 1px solid #FFFFCC; */
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
+	border-bottom: 1px solid;
 }
