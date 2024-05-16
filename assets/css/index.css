@@ -139,3 +139,15 @@ footer {
 	font-weight: bold !important;
 	text-transform: uppercase !important;
 }
+
+.download-cv {
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 100px;
+	background-color: #3131b4;
+	color: #FFFFCC;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	font-weight: bolder;
+	cursor: pointer;
+} 
