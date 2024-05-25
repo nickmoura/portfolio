@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Compras</title>
+    <link rel="stylesheet" href="../assets/css/carrinho.css">
+</head>
+<body>
+    <h1>Simulador de Compras</h1>
+    <div class="store">
+        <div class="product">
+            <h2>Notebook</h2>
+			<img src="https://imgs.casasbahia.com.br/1546366805/1xg.jpg" alt="" width="200px">
+            <p><span class="price">Preço</span>: R$ 10,00</p>
+            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <h2>TV</h2>
+			<img src="https://i.zst.com.br/thumbs/12/37/f/-809670821.jpg" alt="" width="200px">
+            <p><span class="price">Preço</span>: R$ 20,00</p>
+            <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <h2>iPhone 15</h2>
+			<img src="https://planoscelular.claro.com.br/medias/300Wx300H-productCard-18756-zero.png?context=bWFzdGVyfGltYWdlc3w5NjQ5OHxpbWFnZS9wbmd8YUdabEwyZ3lZaTg1TnpNeU1URXhPVGt3T0RFMEx6TXdNRmQ0TXpBd1NGOXdjbTlrZFdOMFEyRnlaRjh4T0RjMU5sOTZaWEp2TG5CdVp3fGQ2MTc4N2M3Nzg1ZDhkNWQwNzUwYTdmZTVlMTMxNTFlMDdiMjA3MDk5MWI4ZjU2YmNiOWYwYjU3NjFiMmRhYjc" alt="" width="200px">
+            <p><span class="price">Preço</span>: R$ 30,00</p>
+            <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <h2>Carrinho de Compras</h2>
+    <div id="cart">
+        <ul id="cart-items"></ul>
+        <p><span class="total-text">Total</span>: R$ <span id="total">0</span></p>
+    </div>
+
+    <script src="../assets/scripts/carrinho.js"></script>
+</body>
+</html>
