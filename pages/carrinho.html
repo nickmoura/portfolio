@@ -18,14 +18,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../assets/ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/ico/favicon-16x16.png">
-    <!-- Main CSS files -->
-    <link rel="stylesheet" href="../assets/css/bootstrap-template.css">
-    <link rel="stylesheet" href="../assets/css/carrinho.css">
     <!-- Vendor CSS Files -->
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-template.css">
+    <link rel="stylesheet" href="../assets/css/carrinho.css">
 </head>
 
 <body>
@@ -55,32 +55,33 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+                    <li><a class="nav-link scrollto" href="../index.html#contact">Contato</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
         </div>
-    </header><!-- End Header -->
-    <h1>Simulador de Compras</h1>
+    </header>
+    <!-- End Header -->
+    <h1 class="page-title">Simulador de Compras</h1>
     <div class="store">
         <div class="product">
             <h2>Notebook</h2>
-            <img src="https://imgs.casasbahia.com.br/1546366805/1xg.jpg" alt="" width="200px">
-            <p><span class="price">Preço</span>: R$ 10,00</p>
+            <img src="../assets/img/carrinho/notebook-samsung-book-intel-core-i5-1135g7-8gb-ram-ssd-256gb-15-6-full-hd-geforce-mx450-windows-11-branco-puro-np550xda-xh1br_1662483233_original-removebg-preview.png" alt="" width="200px">
+            <p><span class="price">Preço</span>: R$ 4.500,00</p>
             <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
             <h2>TV</h2>
-            <img src="https://i.zst.com.br/thumbs/12/37/f/-809670821.jpg" alt="" width="200px">
-            <p><span class="price">Preço</span>: R$ 20,00</p>
+            <img src="../assets/img/carrinho/-809670821-removebg-preview.png" alt="" width="200px">
+            <p><span class="price">Preço</span>: R$ 2.000,00</p>
             <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
             <h2>iPhone 15</h2>
             <img src="https://planoscelular.claro.com.br/medias/300Wx300H-productCard-18756-zero.png?context=bWFzdGVyfGltYWdlc3w5NjQ5OHxpbWFnZS9wbmd8YUdabEwyZ3lZaTg1TnpNeU1URXhPVGt3T0RFMEx6TXdNRmQ0TXpBd1NGOXdjbTlrZFdOMFEyRnlaRjh4T0RjMU5sOTZaWEp2TG5CdVp3fGQ2MTc4N2M3Nzg1ZDhkNWQwNzUwYTdmZTVlMTMxNTFlMDdiMjA3MDk5MWI4ZjU2YmNiOWYwYjU3NjFiMmRhYjc"
                 alt="" width="200px">
-            <p><span class="price">Preço</span>: R$ 30,00</p>
+            <p><span class="price">Preço</span>: R$ 6.000,00</p>
             <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
         </div>
     </div>
@@ -89,6 +90,22 @@
         <ul id="cart-items"></ul>
         <p><span class="total-text">Total</span>: R$ <span id="total">0</span></p>
     </div>
+ 
+  <!-- ======= Footer ======= 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Nickolas Moura</strong>. Todos os direitos reservados.</p>
+            <div class="credits">
+              Desenvolvido por <a href="index.html">Nick Moura</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
 
     <script src="../assets/scripts/carrinho.js"></script>
     <!-- Vendor JS Files -->
