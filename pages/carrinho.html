@@ -1,29 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Compras</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/ico/favicon-16x16.png">
+    <!-- Main CSS files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-template.css">
     <link rel="stylesheet" href="../assets/css/carrinho.css">
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="../index.html">Nick Moura</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <a class="navbar-brand mx-auto" href="../index.html"><img src="../assets/img/logonick.png" alt="Logo"
+                    width="50"></a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="../index.html#hero">Início</a></li>
+                    <li><a class="nav-link scrollto" href="../index.html#about">Sobre</a></li>
+                    <li class="dropdown"><a href="#"><span>Projetos</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="../index.html#work" class="all-projects">Todos os projetos</a></li>
+                            <li><a href="calculadora.html">Calculadora</a></li>
+                            <li><a href="agenda.html">Agenda de eventos</a></li>
+                            <li><a href="buscador.html">Buscador de CEP</a></li>
+                            <li><a href="moedas.html">Conversor de moedas</a></li>
+                            <li><a href="conversor.html">Conversor de medidas</a></li>
+                            <li><a href="login.html">Tela de login</a></li>
+                            <li><a href="https://github-finder-taupe-five.vercel.app/">Buscador de usuários - GitHub</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
     <h1>Simulador de Compras</h1>
     <div class="store">
         <div class="product">
             <h2>Notebook</h2>
-			<img src="https://imgs.casasbahia.com.br/1546366805/1xg.jpg" alt="" width="200px">
+            <img src="https://imgs.casasbahia.com.br/1546366805/1xg.jpg" alt="" width="200px">
             <p><span class="price">Preço</span>: R$ 10,00</p>
             <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
             <h2>TV</h2>
-			<img src="https://i.zst.com.br/thumbs/12/37/f/-809670821.jpg" alt="" width="200px">
+            <img src="https://i.zst.com.br/thumbs/12/37/f/-809670821.jpg" alt="" width="200px">
             <p><span class="price">Preço</span>: R$ 20,00</p>
             <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
             <h2>iPhone 15</h2>
-			<img src="https://planoscelular.claro.com.br/medias/300Wx300H-productCard-18756-zero.png?context=bWFzdGVyfGltYWdlc3w5NjQ5OHxpbWFnZS9wbmd8YUdabEwyZ3lZaTg1TnpNeU1URXhPVGt3T0RFMEx6TXdNRmQ0TXpBd1NGOXdjbTlrZFdOMFEyRnlaRjh4T0RjMU5sOTZaWEp2TG5CdVp3fGQ2MTc4N2M3Nzg1ZDhkNWQwNzUwYTdmZTVlMTMxNTFlMDdiMjA3MDk5MWI4ZjU2YmNiOWYwYjU3NjFiMmRhYjc" alt="" width="200px">
+            <img src="https://planoscelular.claro.com.br/medias/300Wx300H-productCard-18756-zero.png?context=bWFzdGVyfGltYWdlc3w5NjQ5OHxpbWFnZS9wbmd8YUdabEwyZ3lZaTg1TnpNeU1URXhPVGt3T0RFMEx6TXdNRmQ0TXpBd1NGOXdjbTlrZFdOMFEyRnlaRjh4T0RjMU5sOTZaWEp2TG5CdVp3fGQ2MTc4N2M3Nzg1ZDhkNWQwNzUwYTdmZTVlMTMxNTFlMDdiMjA3MDk5MWI4ZjU2YmNiOWYwYjU3NjFiMmRhYjc"
+                alt="" width="200px">
             <p><span class="price">Preço</span>: R$ 30,00</p>
             <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
         </div>
@@ -35,5 +91,16 @@
     </div>
 
     <script src="../assets/scripts/carrinho.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/scripts/main.js"></script>
 </body>
+
 </html>
