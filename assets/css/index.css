@@ -120,6 +120,11 @@ footer {
 	color: #0078ff;
 }
 
+.work-box {
+	/* border: 1px solid #0078ff; */
+	border-radius: 20px;
+}
+
 .proj-type-text {
 	font-size: 1.1rem;
 	text-align: center;
@@ -130,9 +135,34 @@ footer {
 	/* border-top: 1px solid #FFFFCC ;
 	border-left: 1px solid #FFFFCC;
 	border-right: 1px solid #FFFFCC; */
-	border-top-right-radius: 5%;
-	border-top-left-radius: 5%;
 	border-bottom: 1px solid;
+	border-radius: 20px 20px 0 0;
+}
+
+.proj-code-text {
+	font-size: 1.1rem;
+    font-family: "Consolas", Courier, monospace;
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #0078ff;
+	margin: 0;
+	padding: 1rem 0;
+	/* border-top: 1px solid #FFFFCC ;
+	border-left: 1px solid #FFFFCC;
+	border-right: 1px solid #FFFFCC; */
+	border-top: 1px solid;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s ease;
+	border-radius: 0 0 20px 20px;
+}
+
+.proj-code-text:hover {
+	text-transform: uppercase;
+}
+
+.proj-code-text > a {
+	color: #0078ff;
+	cursor: pointer;
 }
 
 #header>.all-projects {
