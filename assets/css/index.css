@@ -23,6 +23,17 @@ body {
 	color: #828282;
 }
 
+.my-picture {
+	border-radius: 50%;
+}
+
+div.about-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
 .box-shadow-full {
 	border-radius: 20px;
 }
