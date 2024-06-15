@@ -136,13 +136,18 @@ footer {
 	color: #0078ff;
 }
 
+.work-pic {
+	height: 250px;
+	width: 500px;
+}
+
 .work-box {
 	/* border: 1px solid #0078ff; */
 	border-radius: 20px;
 }
 
 .work-box:hover {
-	border: 2px solid #0078FF;
+	outline: 2px solid #0078FF;
 }
 
 .proj-type-text {
