@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 40
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 40
 }
 
 body {
@@ -17,6 +17,8 @@ body {
 .my-name {
 	font-weight: bolder;
 	color: #3131b4;
+    text-shadow: 2px 2px 4px rgba(255, 252, 204, 1);
+	;
 }
 
 .portfolio-title {
@@ -65,7 +67,8 @@ header {
 	background-color: #3131b4;
 }
 
-.title-left, .title-s {
+.title-left,
+.title-s {
 	color: #3131b4;
 }
 
@@ -82,7 +85,8 @@ header {
 	background-color: #84bfbf;
 }
 
-.email-link, .link-wpp {
+.email-link,
+.link-wpp {
 	color: #828282;
 }
 
@@ -112,13 +116,13 @@ footer {
 }
 
 .stack-info {
-    opacity: 0.5;
-    transition: opacity 0.3s, transform 0.3s ease;
+	opacity: 0.5;
+	transition: opacity 0.3s, transform 0.3s ease;
 }
 
 .stack-info:hover {
 	opacity: 1;
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .lang {
@@ -135,8 +139,8 @@ footer {
 	justify-content: center;
 }
 
-.w-more > p.w-ctegory {
-    text-align: justify;
+.w-more>p.w-ctegory {
+	text-align: justify;
 }
 
 .w-date {
@@ -174,7 +178,7 @@ footer {
 
 .proj-code-text {
 	font-size: 1.1rem;
-    font-family: "Consolas", Courier, monospace;
+	font-family: "Consolas", Courier, monospace;
 	text-align: center;
 	background-color: #FFFFFF;
 	color: #0078ff;
@@ -193,7 +197,7 @@ footer {
 	text-transform: uppercase;
 }
 
-.proj-code-text > a {
+.proj-code-text>a {
 	color: #0078ff;
 	cursor: pointer;
 }
@@ -213,4 +217,4 @@ footer {
 	font-size: 1.25rem;
 	font-weight: bolder;
 	cursor: pointer;
-} 
+}
