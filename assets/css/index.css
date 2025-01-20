@@ -67,6 +67,12 @@ header {
 	background-position: center;
 }
 
+.lead {
+	text-indent: 2rem;
+	text-align: justify;
+	hyphens: auto;
+}
+
 .line-mf {
 	background-color: #3131b4;
 }
