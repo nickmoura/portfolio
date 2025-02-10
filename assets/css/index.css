@@ -164,6 +164,7 @@ footer {
 }
 
 .work-box {
+	height: 500px;
 	/* border: 1px solid #0078ff; */
 	border-radius: 20px;
 }
